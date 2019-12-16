@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+/*  Main Conatainer  */
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+/*  Table Mask Elements  */
+#tableMask {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.columnMask {
+    display: flex;
+    flex-direction: column;
+}
+.slot {
+    width:70px;
+    height:70px;
+    position:relative;
+    overflow:hidden;
+}
+.slot:before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0px 288px 0px 300px blue;
+}
+
+
+/*  Real Table Elements  */
+#table {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    width: 70px;
+    height: 420px;
+    flex-direction: column-reverse;
+}
+.discRed {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: red;
+}
+.discBlack {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
