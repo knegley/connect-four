@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
+    z-index: 1;
 }
 .columnMask {
     display: flex;
@@ -42,22 +43,31 @@
 #table {
     display: flex;
     flex-direction: row;
+    position: relative;
+    z-index: 2;
 }
 .column {
     display: flex;
     width: 70px;
     height: 420px;
     flex-direction: column-reverse;
+    align-items: center;
 }
 .discRed {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    content: '';
 }
 .discBlack {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
     background-color: black;
+    content: '';
 }
