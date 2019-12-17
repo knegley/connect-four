@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 50px;
 }
 /*  Main Conatainer  */
+body {
+    background-color: #63A1FF;
+}
+span {
+    font-size: 60px;
+}
+h1 {
+    background-color: black;
+    border-radius: 50%;
+    width: 320px;
+    text-align: center;
+}
 #main {
     display: flex;
     flex-direction: column;
@@ -15,7 +31,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 .columnMask {
     display: flex;
@@ -43,8 +59,6 @@
 #table {
     display: flex;
     flex-direction: row;
-    position: relative;
-    z-index: 2;
 }
 .column {
     display: flex;
@@ -54,20 +68,20 @@
     align-items: center;
 }
 .discRed {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: red;
-    margin-top: 10px;
-    margin-bottom: 10px;
     content: '';
+    position: relative;
+    z-index: -2;
 }
 .discBlack {
-    height: 50px;
-    width: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    background-color: black;
+    background-color: yellow;
     content: '';
+    position: relative;
+    z-index: -2;
 }
