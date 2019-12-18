@@ -39,3 +39,7 @@ function checkWin() {
     
     
 };
+
+function reset() {
+    window.location.reload()
+}
