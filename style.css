@@ -3,17 +3,17 @@
     box-sizing: border-box;
     font-family: 'Roboto';
     color: white;
-    font-size: 50px;
 }
 /*  Main Conatainer  */
 body {
-    background-color: #63A1FF;
+    background-color: #69ccea;
 }
 span {
     font-size: 60px;
 }
 h1 {
     background-color: black;
+    font-size: 50px;
     border-radius: 50%;
     width: 320px;
     text-align: center;
@@ -23,7 +23,7 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 500px;
+    height: 700px;
 }
 
 /*  Table Mask Elements  */
@@ -84,4 +84,37 @@ h1 {
     content: '';
     position: relative;
     z-index: -2;
+}
+
+#tableLegleft {
+    height: 490px;
+    width: 15px;
+    background-color: blue;
+    position: absolute;
+    transform: translateX(-15px);
+}
+#tableLegleft:after {
+    background-color: blue;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: -22.5px;
+}
+#tableLegRight {
+    height: 490px;
+    width: 15px;
+    background-color: blue;
+    position: absolute;
+    transform: translateX(490px);
+}
+#tableLegRight:after {
+    background-color: blue;
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: -22.5px;
 }
