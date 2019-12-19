@@ -54,7 +54,6 @@ function checkForWin(current) {
     } else {
         playerClass = 'discYellow'
     }
-
     // Diagonal
 
     for (let firstRow = 5; firstRow > 2; firstRow--) {
@@ -152,6 +151,10 @@ function checkForWin(current) {
         for (let i = 0; i < columns.length; i++) {
             columns[i].removeEventListener("click", columnSelected)
         };
+        let empties = document.getElementsByClassName('empty')
+        for (let i = 0; i < empties.length; i++) {
+            empties[i].style.opacity = '0%'
+        }
     } else if (document.getElementById('table').querySelectorAll('.empty').length === 0) {
         document.getElementById('winStatement').innerHTML = ("<strong>Tie</strong>");
     }
