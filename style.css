@@ -125,11 +125,14 @@ h2 {
     bottom: 0px;
     left: -22.5px;
 }
+<<<<<<< HEAD
 .empty {
     width: 70px;
     height: 70px;
     content: '';
 }
+=======
+>>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
 
 #ruleContainer {
     width: 600px;
@@ -137,12 +140,40 @@ h2 {
     border: black solid 2px;
     border-radius: 2%;
     margin-bottom: 20px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
 }
 
 ol {
     font-size: 8.5pt;
+<<<<<<< HEAD
 }
 #winStatement {
     color: black;
     height: 71px;
+=======
+
+}
+
+button {
+    border-top: 1px solid #96d1f8;
+    margin-top: 25px;
+    background: -webkit-linear-gradient(top, #3c00ff, #59bfff);
+    padding: 3px 6px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {  
+    background: #a6dbff;
+}
+
+button:active { 
+    background: #080080;
+>>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
 }
