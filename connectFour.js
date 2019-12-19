@@ -10,7 +10,10 @@ const columnSelected = function () {
         if (currentPlayer === 'Red') {
             for (let i = 0; i < column.children.length; i++) {
                 if (column.children[i].className === 'empty') {
-                    column.children[i].className = 'discRed'
+                    let empty = column.children[i]
+                    let span = document.createElement("span")
+                    span.className = 'discRed'
+                    empty.replaceWith(span)
                     break
                 }
             }
@@ -18,7 +21,10 @@ const columnSelected = function () {
         } else {
             for (let i = 0; i < column.children.length; i++) {
                 if (column.children[i].className === 'empty') {
-                    column.children[i].className = 'discYellow'
+                    let empty = column.children[i]
+                    let span = document.createElement("span")
+                    span.className = 'discYellow'
+                    empty.replaceWith(span)
                     break
                 }
             }
@@ -26,6 +32,7 @@ const columnSelected = function () {
         };
         checkForWin(currentPlayer)
         currentPlayer = nextPlayer
+        table.style.setProperty('--player-color', currentPlayer)
     };
 };
 for (let i = 0; i < columns.length; i++) {
@@ -141,6 +148,7 @@ function checkForWin(current) {
     }
     if (didWin) {
         document.getElementById('winStatement').innerHTML = ("<strong>" + current + " Wins</strong>");
+        document.getElementById('winStatement').style.color = current
         for (let i = 0; i < columns.length; i++) {
             columns[i].removeEventListener("click", columnSelected)
         };

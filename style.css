@@ -2,14 +2,10 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
-    color: white;
 }
 /*  Main Conatainer  */
 body {
     background-color: #69ccea;
-}
-span {
-    font-size: 60px;
 }
 h1 {
     background-color: black;
@@ -17,12 +13,14 @@ h1 {
     border-radius: 50%;
     width: 320px;
     text-align: center;
+    color: white;
 }
 
 h2 {
     margin-top: 0;
     margin-bottom: 5px;
     text-align: center;
+    font-size: 30px;
 }
 
 #main {
@@ -30,7 +28,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 700px;
+    height: 950px;
 }
 
 /*  Table Mask Elements  */
@@ -66,6 +64,7 @@ h2 {
 #table {
     display: flex;
     flex-direction: row;
+    --player-color: red;
 }
 .column {
     display: flex;
@@ -73,6 +72,9 @@ h2 {
     height: 420px;
     flex-direction: column-reverse;
     align-items: center;
+}
+.column:hover div:first-of-type {
+    background-color: var(--player-color);
 }
 .discRed {
     height: 70px;
@@ -91,6 +93,19 @@ h2 {
     content: '';
     position: relative;
     z-index: -2;
+}
+.empty {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    content: '';
+    position: relative;
+    z-index: -2;
+    opacity: 35%;
+    background-color: none;
+}
+.empty:hover {
+    background-color: none;
 }
 
 #tableLegleft {
@@ -125,36 +140,28 @@ h2 {
     bottom: 0px;
     left: -22.5px;
 }
-<<<<<<< HEAD
-.empty {
-    width: 70px;
-    height: 70px;
-    content: '';
+
+/*  Other Elements  */
+
+#winStatement {
+    font-size: 40px;
+    position: absolute;
+    top: 148px;
 }
-=======
->>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
 
 #ruleContainer {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 140px;
     border: black solid 2px;
     border-radius: 2%;
     margin-bottom: 20px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
+    color: black;
+    margin-top: 30px;
 }
 
 ol {
-    font-size: 8.5pt;
-<<<<<<< HEAD
-}
-#winStatement {
-    color: black;
-    height: 71px;
-=======
-
+    font-size: 10pt;
+    width: 490px;
 }
 
 button {
@@ -167,6 +174,7 @@ button {
     text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: white;
     font-size: 16px;
+    outline: none;
 }
 
 button:hover {  
@@ -175,5 +183,4 @@ button:hover {
 
 button:active { 
     background: #080080;
->>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
 }
