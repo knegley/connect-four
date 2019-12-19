@@ -147,17 +147,3 @@ function checkForWin(current) {
     }
 }
 
-<<<<<<< HEAD
-=======
-function checkWin() {
-    const currentDisc = event.currentTarget.lastElementChild
-    let numberOfMatches = 0
-    const currentDiscPos = currentDisc.getBoundingClientRect()
-    
-    
-};
-
-function reset() {
-    window.location.reload()
-}
->>>>>>> 0d749af92e1729787c0f05a43d401fe77523d077
